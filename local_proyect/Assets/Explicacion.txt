@@ -1,0 +1,6 @@
+buenas dejo la pre entrega del proyecto final 
+la cual cuenta con una escena donde un auto recorre un circuito de carrera la cual contiene una cuenta regresiva 
+y "Checkpoints" que aumentan dicha cuenta.
+la escena cuenta con otro auto que sigue al principal y cuenta con un switch que permite que el auto 
+solo mire al enemigo o lo siga.
+

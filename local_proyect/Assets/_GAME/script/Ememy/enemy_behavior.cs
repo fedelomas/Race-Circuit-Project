@@ -4,7 +4,7 @@ using UnityEngine;
 public class enemy_behavior : MonoBehaviour
 {
     public GameObject Player1;
-    public float distanciaMaxima = 10f;
+    public float distanciaMaxima = 0.1f;
     public float Speed = 1f;
 
     public enum enemy_behaviors
@@ -41,7 +41,7 @@ public class enemy_behavior : MonoBehaviour
         } 
         else
         {
-            Speed = 0f;
+            Speed = 1f;
         }
     }
 
