@@ -1,26 +1,28 @@
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TimerText : MonoBehaviour
 {
     public float timer = 12f;
+     public int Points = 0;
 
     public Text textoTimer;
+    
    
     void Awake()
     {
-        
+       
     }
     void Update()
     {
         timer -= Time.deltaTime;
-        textoTimer.text = "" + timer.ToString("f0"); 
-
-           if (timer <= 0f)
-            {
-                timer = 0;
-            }
+        textoTimer.text = "" + timer.ToString("f0");
+         
+       
+        CambiarEscena();
+           
         
     }
 
@@ -29,7 +31,6 @@ public class TimerText : MonoBehaviour
             if (col.transform.gameObject.tag == "Cheked")
         {
             AddTime();
-
         } 
 
         }
@@ -40,6 +41,19 @@ public class TimerText : MonoBehaviour
             {
                 timer += 5f;
             }
+        }
+
+        void CambiarEscena()
+        {
+           if (timer <= 0f)
+            {
+                SceneManager.LoadScene(1);
+            }
+            if (Points == 8)
+            {
+                SceneManager.LoadScene(1);
+            }
+            
         }
 
     
