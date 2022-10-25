@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_GAME/Scenes/Circuito_2.unity
     guid: 2b97a46f5040ed843831d8b11df52f96
+  - enabled: 1
+    path: Assets/_GAME/Scenes/endGame.unity
+    guid: c9a2701335deeb748875c4c3eb8665cf
   m_configObjects: {}
